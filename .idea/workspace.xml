@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1." />
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/reproductor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/reproductor/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/reproductor/inicio.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +46,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -58,43 +63,23 @@
     "Python.manage.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/UBAM/Universidad/Quinto cuatrimestre/POO III/reproductor_musica"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica\reproductor" />
+      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor\static\reproductor" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor\static" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="reproductor_musica" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reproductor" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reproductor/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.manage" />
         <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>

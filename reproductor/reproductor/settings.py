@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,12 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'reproductor',
 ]
 
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-    BASE_DIR / "reproductor/static",
+    BASE_DIR / 'inicio/static',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
