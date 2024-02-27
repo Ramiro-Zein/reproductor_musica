@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1.">
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/reproductor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/reproductor/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/reproductor/inicio.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,24 +65,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/UBAM/Universidad/Quinto cuatrimestre/POO III/reproductor_musica"
+    "last_opened_file_path": "D:/UBAM/Universidad/Quinto cuatrimestre/POO III/reproductor_musica",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica\reproductor\inicio" />
+      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica\reproductor\inicio\migrations" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica\reproductor" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\Sistemas operativos\Projects\reproductor_musica" />
       <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor\static\reproductor" />
-      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor\static" />
-      <recent name="D:\UBAM\Universidad\Quinto cuatrimestre\POO III\reproductor_musica\reproductor" />
     </key>
-  </component>
-  <component name="RunManager">
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.manage" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -148,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708741529179</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajustes de estilos">
+      <option name="closed" value="true" />
+      <created>1708746780589</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708746780589</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +171,7 @@
     <MESSAGE value="find" />
     <MESSAGE value="todo el código" />
     <MESSAGE value="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1." />
+    <MESSAGE value="Ajustes de estilos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes de estilos" />
   </component>
 </project>
