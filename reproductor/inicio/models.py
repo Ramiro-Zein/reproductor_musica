@@ -38,7 +38,7 @@ class Album(models.Model):
 
 # Tabla: Canción
 class Cancion(models.Model):
-    # Campo de ID que se autoincrementa.
+    # Campo de ID que se autoincrementa
     id_cancion = models.AutoField(primary_key=True)
     # Campo para el título de la canción.
     titulo = models.CharField(max_length=255, default="")
