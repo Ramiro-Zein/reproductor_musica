@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Ajustes de base de datos">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/reproductor_musica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reproductor_musica.iml" afterDir="false" />
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Actualización a la base da datos">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6c94f04-b14f-4733-b484-b8d5d47a7e61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6c94f04-b14f-4733-b484-b8d5d47a7e61.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/inicio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +108,7 @@
       <workItem from="1709069759978" duration="48000" />
       <workItem from="1709069828236" duration="586000" />
       <workItem from="1709070444373" duration="623000" />
+      <workItem from="1709081510751" duration="3597000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -184,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709049844273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Actualización a la base da datos">
+      <option name="closed" value="true" />
+      <created>1709082280834</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709082280834</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +216,7 @@
     <MESSAGE value="Revert &quot;all&quot;&#10;&#10;This reverts commit 39f5a0686e1b9d82d09804e48372ae48cc0c5dc1." />
     <MESSAGE value="Ajustes de estilos" />
     <MESSAGE value="Ajustes de base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes de base de datos" />
+    <MESSAGE value="Actualización a la base da datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualización a la base da datos" />
   </component>
 </project>

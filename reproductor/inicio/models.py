@@ -53,7 +53,7 @@ class Cancion(models.Model):
     # Campo para el número de "me gusta" de la canción.
     me_gusta = models.IntegerField(default="")
     # Duración de la canción o playlist.
-    duracion = models.DurationField(default="")
+    duracion = models.CharField(max_length=255, default="")
     # Género de la canción o playlist, puede ser NULL.
     genero = models.CharField(max_length=255, null=True, blank=True, default="")
 

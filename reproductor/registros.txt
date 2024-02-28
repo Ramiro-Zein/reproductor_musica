@@ -1,0 +1,23 @@
+# Suponiendo que tienes los modelos Artista y Album importados desde tuapp.models
+# from tuapp.models import Artista, Album
+
+# Creando 5 registros únicos para artistas
+artista1 = Artista.objects.create(nombre="Guns N' Roses", genero="Rock", seguidores=10000, discografia="Rocking", oyentes_mensuales=9000)
+artista2 = Artista.objects.create(nombre="Queen", genero="Rock", seguidores=12000, discografia="Greatest Hits", oyentes_mensuales=9500)
+artista3 = Artista.objects.create(nombre="Beyoncé", genero="Pop", seguidores=15000, discografia="Lemonade", oyentes_mensuales=12000)
+artista4 = Artista.objects.create(nombre="Drake", genero="Hip Hop", seguidores=18000, discografia="Scorpion", oyentes_mensuales=13000)
+artista5 = Artista.objects.create(nombre="Taylor Swift", genero="Pop", seguidores=20000, discografia="1989", oyentes_mensuales=15000)
+
+# Creando registros de álbumes para los artistas
+album1 = Album.objects.create(titulo="Appetite for Destruction", ano_lanzamiento="1987-01-01", numero_canciones=12, artista=artista1)
+album2 = Album.objects.create(titulo="Greatest Hits", ano_lanzamiento="1981-01-01", numero_canciones=17, artista=artista2)
+album3 = Album.objects.create(titulo="Lemonade", ano_lanzamiento="2016-01-01", numero_canciones=12, artista=artista3)
+album4 = Album.objects.create(titulo="Scorpion", ano_lanzamiento="2018-01-01", numero_canciones=25, artista=artista4)
+album5 = Album.objects.create(titulo="1989", ano_lanzamiento="2014-01-01", numero_canciones=13, artista=artista5)
+
+# Creando registros de canciones
+cancion1 = Cancion.objects.create(titulo="Bloodstream", fecha_creacion="2024-02-27", me_gusta=1, duracion="4:30", genero="Pop", id_album_id=1, id_artista_id=1)
+cancion2 = Cancion.objects.create(titulo="Don't", fecha_creacion="2024-02-27", me_gusta=0, duracion="3:55", genero="Pop", id_album_id=1, id_artista_id=1)
+cancion3 = Cancion.objects.create(titulo="Drumming Song", fecha_creacion="2024-02-27", me_gusta=1, duracion="4:10", genero="Rock", id_album_id=2, id_artista_id=2)
+cancion4 = Cancion.objects.create(titulo="Blinding", fecha_creacion="2024-02-27", me_gusta=0, duracion="3:40", genero="Rock", id_album_id=2, id_artista_id=2)
+cancion5 = Cancion.objects.create(titulo="Lights - Single Version", fecha_creacion="2024-02-27", me_gusta=1, duracion="3:20", genero="Pop", id_album_id=3, id_artista_id=3)
