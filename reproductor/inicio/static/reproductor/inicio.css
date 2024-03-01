@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Spotify;
+    src: url("{% static 'SpotifyFont.otf' %}");
+}
+
 body {
     background-color: #000;
+    font-family: Spotify;
 }
 
 #seccion_principal {
@@ -158,6 +164,430 @@ body {
 
 #seccion_abajo {
     width: 100%;
-    height: 80px;
+    height: 72px;
     background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+#barra_superior {
+    width: 100%;
+    height: 40px;
+}
+
+#barra_superior {
+    width: 100%;
+    height: 64px;
+    display: flex;
+}
+
+#contenido_inicio {
+    width: 100%;
+    height: auto;
+}
+
+#barra_superior_izquierda {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#barra_superior_enmedio {
+    width: 70%;
+    height: 100%;
+}
+
+#barra_superior_derecha {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#seccion_abajo_izquierda {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+}
+
+#seccion_abajo_izquierda_izquierda {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+#seccion_abajo_izquierda_enmedio {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#seccion_abajo_izquierda_enmedio p {
+    color: #fff;
+    margin: 0 16px 0 8px;
+}
+
+#seccion_abajo_izquierda_enmedio_titulo_cancion {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#seccion_abajo_izquierda_enmedio_nombre_artista {
+    color: #a7a7a7 !important;
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+#seccion_abajo_izquierda_izquierda img {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+}
+
+#seccion_abajo_izquierda_derecha {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton_favorito_cancion {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#boton_favorito_cancion svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_favorito_cancion svg:hover {
+    fill: #fff;
+}
+
+#seccion_abajo_enmedio {
+    width: 40%;
+    height: auto;
+}
+
+#seccion_abajo_enmedio_arriba {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#seccion_abajo_enmedio_arriba section {
+    flex-flow: row nowrap;
+    display: flex;
+}
+
+#seccion_abajo_enmedio_arriba_izquierda {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+#boton_aleatorio {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_aleatorio svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_aleatorio:hover svg {
+    fill: #fff;
+}
+
+#boton_cancion_anterior {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_cancion_anterior svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_cancion_anterior:hover svg {
+    fill: #fff;
+}
+
+#boton_play {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_play svg {
+    width: 16px;
+    height: 16px;
+}
+
+#seccion_abajo_enmedio_arriba_derecha {
+    flex: 1;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+#boton_cancion_siguiente {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_cancion_siguiente svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_cancion_siguiente:hover svg {
+    fill: #fff;
+}
+
+#boton_repetir_cancion {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_repetir_cancion svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_repetir_cancion:hover svg {
+    fill: #fff;
+}
+
+#seccion_abajo_enmedio_abajo {
+    width: 100%;
+    height: 17px;
+}
+
+#seccion_abajo_derecha {
+    width: 30%;
+    height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+#seccion_abajo_derecha_1 {
+    width: 32px;
+    height: 32px;
+}
+
+#boton_letra_cancion {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_letra_cancion svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_letra_cancion:hover svg {
+    fill: #fff;
+}
+
+#seccion_abajo_derecha_2 {
+    width: 32px;
+    height: 32px;
+}
+
+#boton_cola_reproduccion {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_cola_reproduccion svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_cola_reproduccion:hover svg {
+    fill: #fff;
+}
+
+#seccion_abajo_derecha_3 {
+    width: 32px;
+    height: 32px;
+}
+
+#seccion_abajo_derecha_4 {
+    width: 32px;
+    height: 32px;
+}
+
+#boton_pantalla_completa {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#boton_pantalla_completa svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+#boton_pantalla_completa:hover svg {
+    fill: #fff;
+}
+
+#boton_atras {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#boton_adelante {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#boton_novedades {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#boton_novedades svg {
+    width: 16px;
+    height: 16px;
+}
+
+#boton_novedades svg path {
+    fill: #fff;
+}
+
+#boton_perfil {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: none;
+    padding: 0;
+    background-color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton_perfil span {
+    width: 26px;
+    height: 26px;
+    background-color: #ae0f78;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
