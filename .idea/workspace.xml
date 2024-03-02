@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Insercción de registros.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6c94f04-b14f-4733-b484-b8d5d47a7e61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6c94f04-b14f-4733-b484-b8d5d47a7e61.xml" afterDir="false" />
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
     </list>
@@ -73,7 +71,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -115,7 +113,13 @@
       <workItem from="1709141694480" duration="2751000" />
       <workItem from="1709180506438" duration="1584000" />
       <workItem from="1709216948018" duration="32000" />
-      <workItem from="1709256233501" duration="2782000" />
+      <workItem from="1709256233501" duration="4841000" />
+      <workItem from="1709312685787" duration="164000" />
+      <workItem from="1709316826145" duration="4746000" />
+      <workItem from="1709355420880" duration="23000" />
+      <workItem from="1709355531816" duration="54000" />
+      <workItem from="1709409292097" duration="1009000" />
+      <workItem from="1709410331300" duration="4389000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -205,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709085682840</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="incoporación de secciones_abajo">
+      <option name="closed" value="true" />
+      <created>1709259392156</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709259392156</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +245,7 @@
     <MESSAGE value="Ajustes de base de datos" />
     <MESSAGE value="Actualización a la base da datos" />
     <MESSAGE value="Insercción de registros.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insercción de registros.txt" />
+    <MESSAGE value="incoporación de secciones_abajo" />
+    <option name="LAST_COMMIT_MESSAGE" value="incoporación de secciones_abajo" />
   </component>
 </project>

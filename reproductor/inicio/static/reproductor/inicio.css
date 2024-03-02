@@ -1,11 +1,14 @@
-@font-face {
-    font-family: Spotify;
-    src: url("{% static 'SpotifyFont.otf' %}");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 body {
     background-color: #000;
-    font-family: Spotify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+}
+
+p {
+    font-weight: 300;
 }
 
 #seccion_principal {
@@ -183,8 +186,24 @@ body {
 
 #contenido_inicio {
     width: 100%;
-    height: auto;
+    height: calc(100% - 72px);
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
+
+#contenido_inicio::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 8px;
+}
+
+#contenido_inicio::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
+}
+
 
 #barra_superior_izquierda {
     width: 15%;
@@ -590,4 +609,102 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#escuchado_recientemente_titulo {
+    color: white;
+    font-size: 22px;
+    padding-left: 16px;
+}
+
+#escuchados_recientemente {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.cancion_inicio_item {
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #181818;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cancion_inicio_item:hover {
+    background-color: #282828;
+}
+
+.cancion_inicio_item_arriba {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.cancion_inicio_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes animacion_boton_play_inicio_item {
+    0% {
+        opacity: 0;
+        transform: none;
+    }
+    100% {
+        opacity: 1;
+        bottom: 8px;
+    }
+}
+
+.boton_play_inicio_item {
+    position: absolute;
+    right: 8px;
+    bottom: 0px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: #1ed760;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
+}
+
+.cancion_inicio_item:hover .boton_play_inicio_item {
+    opacity: 1 !important;
+    bottom: 8px;
+}
+
+.boton_play_inicio_item svg {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
+.cancion_inicio_item_abajo {
+    width: 100%;
+    color: white;
+}
+
+.cancion_inicio_item_abajo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancion_inicio_item_abajo h5 {
+    font-size: 16px;
+}
+
+.cancion_inicio_item_abajo p {
+    font-size: 14px;
+    color: #a7a7a7 !important;;
 }
