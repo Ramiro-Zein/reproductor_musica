@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="">
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Integración de cards">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/migrations/0002_alter_album_ano_lanzamiento_alter_album_artista_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/migrations/0003_alter_cancion_duracion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +125,12 @@
       <workItem from="1709355420880" duration="23000" />
       <workItem from="1709355531816" duration="54000" />
       <workItem from="1709409292097" duration="1009000" />
-      <workItem from="1709410331300" duration="4389000" />
+      <workItem from="1709410331300" duration="5040000" />
+      <workItem from="1709445011468" duration="38000" />
+      <workItem from="1709445226839" duration="454000" />
+      <workItem from="1709499526967" duration="26000" />
+      <workItem from="1709590097841" duration="19000" />
+      <workItem from="1709650793054" duration="1725000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -217,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709259392156</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Integración de cards">
+      <option name="closed" value="true" />
+      <created>1709414823650</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709414823650</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +265,7 @@
     <MESSAGE value="Actualización a la base da datos" />
     <MESSAGE value="Insercción de registros.txt" />
     <MESSAGE value="incoporación de secciones_abajo" />
-    <option name="LAST_COMMIT_MESSAGE" value="incoporación de secciones_abajo" />
+    <MESSAGE value="Integración de cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integración de cards" />
   </component>
 </project>
