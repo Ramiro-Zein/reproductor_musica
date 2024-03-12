@@ -127,6 +127,14 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: #232323;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.playlist_item:hover {
+    background-color: #393939;
 }
 
 .playlist_item section {
@@ -157,6 +165,7 @@ p {
     display: flex;
     padding: 8px 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 #seccion_derecha_interior {
@@ -176,15 +185,18 @@ p {
 #barra_superior {
     width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #barra_superior {
     width: 100%;
     height: 64px;
-    display: flex;
+    z-index: 100;
+    position: absolute;
 }
 
-#contenido_inicio {
+#seccion_superior_derecha_inicio {
     width: 100%;
     height: calc(100% - 72px);
     overflow: hidden;
@@ -193,13 +205,13 @@ p {
     box-sizing: border-box;
 }
 
-#contenido_inicio::-webkit-scrollbar {
+#superior_derecha_inicio::-webkit-scrollbar {
     background-color: transparent;
     border-radius: 20px;
     width: 8px;
 }
 
-#contenido_inicio::-webkit-scrollbar-thumb {
+#barra_superios_inicio::-webkit-scrollbar-thumb {
     background-color: gray;
     border-radius: 20px;
 }
@@ -675,7 +687,7 @@ p {
     opacity: 0;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cancion_inicio_item:hover .boton_play_inicio_item {
@@ -709,3 +721,222 @@ p {
     color: #a7a7a7 !important;;
 }
 
+#playlist_detalles_contenedor {
+    position: absolute;
+    width: calc(70% - 8px);
+    height: calc(100% - 96px);
+    top: 8px;
+    left: 30%;
+    border-radius: 8px;
+    background: #121212;
+    background: linear-gradient(180deg, rgb(180, 58, 58), rgba(18, 18, 18, 1) 80%);
+    box-sizing: border-box;
+}
+
+#playlist_detalles_cabecera {
+    width: 100%;
+    height: 331px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: flex-end;
+    padding: 84px 16px 16px 16px;
+    border-radius: 8px 8px 0 0;
+    background-color: rgb(180, 58, 58);
+    box-sizing: border-box;
+}
+
+#playlist_detalles_cabecera_izquierda {
+    height: 100%;
+    display: flex;
+}
+
+#playlist_detalles_cabecera_izquierda img {
+    width: 231px;
+    height: 231px;
+    border-radius: 4px;
+}
+
+#playlist_detalles_cabecera_derecha {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#playlist_detalles_cabecera_derecha h1 {
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    font-weight: 900;
+}
+
+#playlist_detalles_cabecera_derecha p {
+    color: white;
+    font-size: 13px;
+}
+
+#playlist_detalles_lista_contenedor {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#detalles_playlist_opciones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+
+#detalles_playlist_opciones_izquierda {
+    width: auto;
+    height: auto;
+}
+
+#boton_play_playlist_detalles_principal {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: #1ed760;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .3);
+}
+
+#boton_play_playlist_detalles_principal svg {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
+#playlist_detalles_lista_canciones {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#playlist_detalles_lista_canciones_cabecera {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 5% 35% 25% 20% 15%;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+.playlist_detalles_lista_canciones_cabecera_items {
+    height: 56px;
+    font-size: 14px;
+    color: #a7a7a7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.playlist_detalles_lista_canciones_cabecera_items svg {
+    margin-right: 32px;
+}
+
+.playlist_detalles_lista_canciones_cabecera_items svg {
+    width: 16px;
+    height: 16px;
+    fill: #a7a7a7;
+}
+
+.playlist_canciones_item {
+    width: 100%;
+    height: 56px;
+    display: grid;
+    grid-template-columns: 5% 35% 25% 20% 15%;
+}
+
+.playlist_canciones_item:hover {
+    background-color: #ffffff1a;
+}
+
+.titulo_cancion img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.titulo_cancion span {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.playlist_canciones_item_titulo_cancion {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+}
+
+.titulo_cancion span a {
+    text-decoration: none;
+    margin: 0;
+    color: #a7a7a7;
+}
+
+.titulo_cancion span a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.album_cancion a {
+    text-decoration: none;
+    margin: 0;
+    color: #a7a7a7;
+}
+
+.album_cancion a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.duracion_cancion {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.duracion_cancion span {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.boton_tres_puntos_playlist_canciones_item {
+    width: 18px;
+    height: 33px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.boton_tres_puntos_playlist_canciones_item svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+    margin: 0;
+}
+
+.playlist_canciones_item:hover .boton_tres_puntos_playlist_canciones_item {
+    opacity: 1;
+}

@@ -11,168 +11,310 @@
 </head>
 
 <body>
-    <section id="seccion_principal">
-        <!-- SECCION SUPERIOR DE LA APLICACION -->
-        <section id="seccion_arriba">
+<section id="seccion_principal">
+    <!-- SECCION SUPERIOR DE LA APLICACION -->
+    <section id="seccion_arriba">
 
-            <section id="seccion_superior_izquierda">
-                <div id="seccion_izquierda_arriba">
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Buscar</a></li>
-                    </ul>
-                </div>
+        <section id="seccion_superior_izquierda">
+            <div id="seccion_izquierda_arriba">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Buscar</a></li>
+                </ul>
+            </div>
 
-                <div id="seccion_superior_izquierda_abajo">
-                    <div id="seccion_izquierda_abajo_cabecera">
-                        <div id="tu_biblioteca_titulo">
-                            Tu biblioteca
-                        </div>
-                        <section id="agregar_playlist">
-                            <button>+</button>
-                        </section>
-
+            <div id="seccion_superior_izquierda_abajo">
+                <div id="seccion_izquierda_abajo_cabecera">
+                    <div id="tu_biblioteca_titulo">
+                        Tu biblioteca
                     </div>
-                    <section id="playlists_titulo">
-                        <span>Playlists</span>
+                    <section id="agregar_playlist">
+                        <button>+</button>
                     </section>
 
-                    <section id="playlists_contenedor">
-                        <section class="playlist_item">
-                            <section>
-                                <img>
-                            </section>
-                            <section>
-                                <p>Playlist 1</p>
-                                <p>Zein</p>
-                            </section>
-
-                        </section>
-                    </section>
                 </div>
-
-
-            </section>
-
-            <section id="seccion_superior_derecha">
-                <section id="seccion_derecha_interior">
-                    <section id="barra_superior">
-                        <section id="barra_superior_izquierda">
-                            <button id="boton_atras"> < </button>
-                            <button id="boton_adelante"> > </button>
-                        </section>
-                        <section id="barra_superior_enmedio"></section>
-                        <section id="barra_superior_derecha">
-                            <button id="boton_novedades">
-                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path></svg>
-                            </button>
-                            <button id="boton_perfil">
-                                <span>Z</span>
-                            </button>
-                        </section>
-                    </section>
-
-                    <section id="contenido_inicio">
-                        <h5 id="escuchado_recientemente_titulo">Escuchado recientemente</h5>
-
-                        <section id="escuchados_recientemente">
-                            {% for cancion in canciones %}
-                                <section class="cancion_inicio_item">
-                                    <section class="cancion_inicio_item_arriba">
-                                        <img src={{ cancion.album.imagen }} alt="Imagen del album">
-                                        <button class="boton_play_inicio_item">
-                                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
-                                        </button>
-                                    </section>
-                                    <section class="cancion_inicio_item_abajo">
-                                        <a href="#">{{ cancion.titulo }}</a>
-                                        <p>{{ cancion.album.artista.nombre }}</p>
-                                    </section>
-                                </section>
-                            {% endfor %}
-
-                        </section>
-
-                    </section>
+                <section id="playlists_titulo">
+                    <span>Playlists</span>
                 </section>
-            </section>
+
+                <section id="playlists_contenedor">
+                    {% for playlist_item in playlist %}
+                    <section class="playlist_item">
+                        <section>
+                            <img src="{{playlist_item.imagen}}">
+                        </section>
+                        <section>
+                            <p>{{playlist_item.nombre}}</p>
+                            <p>{{playlist_item.usuario}}</p>
+                        </section>
+                    </section>
+                    {% endfor %}
+                </section>
+            </div>
 
         </section>
 
-
-        <!-- AQUI VA EL REPRODUCTOR DE MUSICA -->
-
-        <section id="seccion_abajo">
-
-            <section id="seccion_abajo_izquierda">
-                <section id="seccion_abajo_izquierda_izquierda">
-                    <img src="https://is3-ssl.mzstatic.com/image/thumb/Music116/v4/43/3b/ed/433bedaf-fcb0-9c11-cb11-b24d90df7e21/23UMGIM64367.rgb.jpg/1200x1200bf-60.jpg">
-                </section>
-                <section id="seccion_abajo_izquierda_enmedio">
-                    <p id="seccion_abajo_izquierda_enmedio_titulo_cancion">Am i Dreaming</p>
-                    <p id="seccion_abajo_izquierda_enmedio_nombre_artista">Metro Boomin</p>
-                </section>
-                <section id="seccion_abajo_izquierda_derecha">
-                    <button id="boton_favorito_cancion">
-                       <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M1.69 2A4.582 4.582 0 0 1 8 2.023 4.583 4.583 0 0 1 11.88.817h.002a4.618 4.618 0 0 1 3.782 3.65v.003a4.543 4.543 0 0 1-1.011 3.84L9.35 14.629a1.765 1.765 0 0 1-2.093.464 1.762 1.762 0 0 1-.605-.463L1.348 8.309A4.582 4.582 0 0 1 1.689 2zm3.158.252A3.082 3.082 0 0 0 2.49 7.337l.005.005L7.8 13.664a.264.264 0 0 0 .311.069.262.262 0 0 0 .09-.069l5.312-6.33a3.043 3.043 0 0 0 .68-2.573 3.118 3.118 0 0 0-2.551-2.463 3.079 3.079 0 0 0-2.612.816l-.007.007a1.501 1.501 0 0 1-2.045 0l-.009-.008a3.082 3.082 0 0 0-2.121-.861z"></path></svg>
-                    </button>
-                </section>
-            </section>
-
-            <section id="seccion_abajo_enmedio">
-                <section id="seccion_abajo_enmedio_arriba">
-                    <section id="seccion_abajo_enmedio_arriba_izquierda">
-                        <button id="boton_aleatorio">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"></path><path d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"></path></svg>
-                        </button>
-                        <button id="boton_cancion_anterior">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path></svg>
-                        </button>
+        <section id="seccion_superior_derecha">
+            <section id="seccion_derecha_interior">
+                <section id="barra_superior">
+                    <section id="barra_superior_izquierda">
+                        <button id="boton_atras"> <</button>
+                        <button id="boton_adelante"> ></button>
                     </section>
-
-                    <section>
-                        <button id="boton_play">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path></svg>
+                    <section id="barra_superior_enmedio"></section>
+                    <section id="barra_superior_derecha">
+                        <button id="boton_novedades">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                 class="Svg-sc-ytk21e-0 dYnaPI">
+                                <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
+                            </svg>
                         </button>
-                    </section>
-
-                    <section id="seccion_abajo_enmedio_arriba_derecha">
-                        <button id="boton_cancion_siguiente">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path></svg>
-                        </button>
-                        <button id="boton_repetir_cancion">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path></svg>
+                        <button id="boton_perfil">
+                            <span>Z</span>
                         </button>
                     </section>
                 </section>
-                <section id="seccion_abajo_enmedio_abajo"></section>
+                <!--
+                <section id="contenido_inicio">
+                    <h5 id="escuchado_recientemente_titulo">Escuchado recientemente</h5>
+
+                    <section id="escuchados_recientemente">
+
+
+                        {% for cancion in canciones %}
+                            <section class="cancion_inicio_item">
+                                <section class="cancion_inicio_item_arriba">
+                                    <img src={{ cancion.album.imagen }} alt="Imagen del album">
+                                    <button class="boton_play_inicio_item">
+                                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                                    </button>
+                                </section>
+                                <section class="cancion_inicio_item_abajo">
+                                    <a href="#">{{ cancion.titulo }}</a>
+                                    <p>{{ cancion.album.artista.nombre }}</p>
+                                </section>
+                            </section>
+                        {% endfor %}
+
+                    </section>
+                </section>
+                -->
             </section>
+        </section>
 
-            <section id="seccion_abajo_derecha">
-                <section id="seccion_abajo_derecha_1">
-                    <button id="boton_letra_cancion">
-                       <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path></svg>
-                    </button>
+        <section id="contenido_inicio">
+            <section id="playlist_detalles_contenedor">
+                <!-- Cabecera de los detalles de la playlist -->
+                <section id="playlist_detalles_cabecera">
+                    <section id="playlist_detalles_cabecera_izquierda">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71SrRo5Mg6L._AC_SL1057_.jpg"
+                             alt="">
+                    </section>
+                    <section id="playlist_detalles_cabecera_derecha">
+                        <h1>Playlist 1</h1>
+                        <p>Esta es mi primer playlist</p>
+                        <p>Nombre usuario 2 canciones</p>
+                    </section>
                 </section>
-                <section id="seccion_abajo_derecha_2">
-                    <button id="boton_cola_reproduccion">
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path></svg>
-                    </button>
-                </section>
+                <!-- Parte inferior de los detalles de la playlist -->
+                <section id="playlist_detalles_lista_contenedor">
+                    <!-- Fila donde se encuentra el botón de play verde -->
+                    <section id="detalles_playlist_opciones">
+                        <section id="playlist_detalles_opciones_izquierda">
+                            <button id="boton_play_playlist_detalles_principal">
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                                     class="Svg-sc-ytk21e-0 bneLcE">
+                                    <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A. 7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path>
+                                </svg>
+                            </button>
+                        </section>
+                    </section>
 
-                <section id="seccion_abajo_derecha_3">
-                    Barra de volumen
-                </section>
+                    <!-- Sección donde está la lista de canciones de la playlist -->
+                    <section id="playlist_detalles_lista_canciones">
+                        <!-- Cabecera de la lista de canciones de la playlist -->
+                        <section id="playlist_detalles_lista_canciones_cabecera">
+                            <section class="playlist_detalles_lista_canciones_cabecera_items">#</section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items">Título</section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items">Álbum</section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items">Fecha en que se
+                                agregó
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items duracion_cancion">
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                     class="Svg-sc-ytk21e-0 dYnaPI">
+                                    <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                                    <path d="M8 3.25a.75.75 0 0 1 .75.75v3.25H11a.75.75 0 0 1 0 1.5H7.25V4A.75.75 0 0 1 8 3.25z"></path>
+                                </svg>
+                            </section>
+                        </section>
 
-                <section id="seccion_abajo_derecha_4">
-                    <button id="boton_pantalla_completa">
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI"><path d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path></svg>
-                    </button>
+                        <!-- Items de las canciones de la playlist -->
+                        <section class="playlist_canciones_item">
+                            <section class="playlist_detalles_lista_canciones_cabecera_items numero_cancion">1
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items titulo_cancion">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02a8f95e7f840c11edfa6cc3bd"
+                                     alt="">
+                                <span>
+                                    <a href=""><p class="playlist_canciones_item_titulo_cancion">Demons</p></a>
+                                    <a href="">Imagine Dragons</a>
+                                </span>
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items album_cancion">
+                                <a href="">Songs About Jane</a>
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items fecha_agregado">
+                                07/02/2024
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items duracion_cancion">
+                                <span>4:35</span>
+                                <button class="boton_tres_puntos_playlist_canciones_item">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                         class="Svg-sc-ytk21e-0 dYnaPI">
+                                        <path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                                    </svg>
+                                </button>
+                            </section>
+                        </section>
+
+                        <section class="playlist_canciones_item">
+                            <section class="playlist_detalles_lista_canciones_cabecera_items numero_cancion">2
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items titulo_cancion">
+                                <img src="https://i.scdn.co/image/ab67616d000048518863bc11d2aa12b54f5aeb36"
+                                     alt="">
+                                <span>
+                                    <a href=""><p class="playlist_canciones_item_titulo_cancion">Save Your Tears</p></a>
+                                    <a href="">The Weeknd</a>
+                                </span>
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items album_cancion">
+                                <a href="">Black album</a>
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items fecha_agregado">
+                                07/02/2024
+                            </section>
+                            <section class="playlist_detalles_lista_canciones_cabecera_items duracion_cancion">
+                                <span>6:28</span>
+                                <button class="boton_tres_puntos_playlist_canciones_item">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                         class="Svg-sc-ytk21e-0 dYnaPI">
+                                        <path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                                    </svg>
+                                </button>
+                            </section>
+                        </section>
+                    </section>
                 </section>
             </section>
-
         </section>
 
     </section>
+
+
+    <!-- AQUI VA EL REPRODUCTOR DE MUSICA -->
+
+    <section id="seccion_abajo">
+
+        <section id="seccion_abajo_izquierda">
+            <section id="seccion_abajo_izquierda_izquierda">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Music116/v4/43/3b/ed/433bedaf-fcb0-9c11-cb11-b24d90df7e21/23UMGIM64367.rgb.jpg/1200x1200bf-60.jpg">
+            </section>
+            <section id="seccion_abajo_izquierda_enmedio">
+                <p id="seccion_abajo_izquierda_enmedio_titulo_cancion">Am i Dreaming</p>
+                <p id="seccion_abajo_izquierda_enmedio_nombre_artista">Metro Boomin</p>
+            </section>
+            <section id="seccion_abajo_izquierda_derecha">
+                <button id="boton_favorito_cancion">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                         class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M1.69 2A4.582 4.582 0 0 1 8 2.023 4.583 4.583 0 0 1 11.88.817h.002a4.618 4.618 0 0 1 3.782 3.65v.003a4.543 4.543 0 0 1-1.011 3.84L9.35 14.629a1.765 1.765 0 0 1-2.093.464 1.762 1.762 0 0 1-.605-.463L1.348 8.309A4.582 4.582 0 0 1 1.689 2zm3.158.252A3.082 3.082 0 0 0 2.49 7.337l.005.005L7.8 13.664a.264.264 0 0 0 .311.069.262.262 0 0 0 .09-.069l5.312-6.33a3.043 3.043 0 0 0 .68-2.573 3.118 3.118 0 0 0-2.551-2.463 3.079 3.079 0 0 0-2.612.816l-.007.007a1.501 1.501 0 0 1-2.045 0l-.009-.008a3.082 3.082 0 0 0-2.121-.861z"></path>
+                    </svg>
+                </button>
+            </section>
+        </section>
+
+
+        <section id="seccion_abajo_enmedio">
+            <section id="seccion_abajo_enmedio_arriba">
+                <section id="seccion_abajo_enmedio_arriba_izquierda">
+                    <button id="boton_aleatorio">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                             class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"></path>
+                            <path d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"></path>
+                        </svg>
+                    </button>
+                    <button id="boton_cancion_anterior">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                             class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path>
+                        </svg>
+                    </button>
+                </section>
+
+                <section>
+                    <button id="boton_play">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                             class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path>
+                        </svg>
+                    </button>
+                </section>
+
+                <section id="seccion_abajo_enmedio_arriba_derecha">
+                    <button id="boton_cancion_siguiente">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                             class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path>
+                        </svg>
+                    </button>
+                    <button id="boton_repetir_cancion">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                             class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"></path>
+                        </svg>
+                    </button>
+                </section>
+            </section>
+            <section id="seccion_abajo_enmedio_abajo"></section>
+        </section>
+
+        <section id="seccion_abajo_derecha">
+            <section id="seccion_abajo_derecha_1">
+                <button id="boton_letra_cancion">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                         class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path>
+                    </svg>
+                </button>
+            </section>
+            <section id="seccion_abajo_derecha_2">
+                <button id="boton_cola_reproduccion">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                         class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z"></path>
+                    </svg>
+                </button>
+            </section>
+
+            <section id="seccion_abajo_derecha_3">
+                Barra de volumen
+            </section>
+
+            <section id="seccion_abajo_derecha_4">
+                <button id="boton_pantalla_completa">
+                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                         class="Svg-sc-ytk21e-0 dYnaPI">
+                        <path d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path>
+                    </svg>
+                </button>
+            </section>
+        </section>
+
+    </section>
+
+</section>
 </body>
 </html>

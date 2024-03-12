@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Primeros registros">
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Registros 50">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a16ae68c-121e-4b67-a209-0b6623d175a9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a16ae68c-121e-4b67-a209-0b6623d175a9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/reproductor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/reproductor/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +133,15 @@
       <workItem from="1709652530195" duration="4366000" />
       <workItem from="1709657090099" duration="154000" />
       <workItem from="1709687242545" duration="1800000" />
-      <workItem from="1709692597720" duration="1310000" />
+      <workItem from="1709692597720" duration="2080000" />
+      <workItem from="1709739190176" duration="59000" />
+      <workItem from="1709743733198" duration="4270000" />
+      <workItem from="1709922227223" duration="1102000" />
+      <workItem from="1709923473563" duration="550000" />
+      <workItem from="1709952825383" duration="77000" />
+      <workItem from="1709954078889" duration="1054000" />
+      <workItem from="1710014446084" duration="5665000" />
+      <workItem from="1710020921368" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -249,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709687372389</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Registros 50">
+      <option name="closed" value="true" />
+      <created>1709694022454</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709694022454</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +303,7 @@
     <MESSAGE value="Integración de cards" />
     <MESSAGE value="Base de datos actualizada" />
     <MESSAGE value="Primeros registros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeros registros" />
+    <MESSAGE value="Registros 50" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registros 50" />
   </component>
 </project>
