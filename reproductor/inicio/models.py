@@ -18,6 +18,7 @@ class Cancion(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     letra = models.TextField(default="")
     duracion = models.CharField(max_length=10, default="")
+    archivo = models.CharField(max_length=255, default="")
 
 class Usuario(models.Model):
     id_usuario = models.AutoField(primary_key=True)
