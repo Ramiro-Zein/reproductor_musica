@@ -1,16 +1,9 @@
 from django.contrib import admin
-from django.urls import path
-from django.urls import include
+from django.urls import path, include
 from django.views.generic import RedirectView
-from . import views
 
-# Variable que detecta las rutas a las cuales se van a acceder
-# Aqui se edita
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('inicio/', include('inicio.urls')),
     path('', RedirectView.as_view(url='/inicio/', permanent=True)),
-    path('cancion/<int:id_cancion>', views.cancion)
 ]
-
-

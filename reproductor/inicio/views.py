@@ -1,9 +1,6 @@
 from django.shortcuts import render
-# from django.forms.models import model_to_dict
 from inicio.models import *
 
-# Create your views here.
-# Contiene la lógica para la página de inicio
 def inicio(peticion):
     canciones = Cancion.objects.all()
     playlist = Playlist.objects.all()
@@ -12,4 +9,8 @@ def inicio(peticion):
 def cancion(peticion, id_cancion):
     cancion = Cancion.objects.get(id_cancion=id_cancion)
     cancion.letra = cancion.letra.split(".")
-    return render(peticion, "inicio/cancion.html", {"canciones":cancion})
+    return render(peticion, "inicio/cancion.html", {"cancion":cancion})
+
+def playlist(peticion):
+    playlists = Playlist.objects.all()
+    return render(peticion, 'inicio/playlist.html', {"playlists": playlists})
