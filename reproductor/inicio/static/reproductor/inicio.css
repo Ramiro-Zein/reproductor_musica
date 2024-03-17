@@ -37,7 +37,7 @@ p {
 }
 
 #seccion_superior_izquierda ul {
-    padding: 8px 12px;
+    padding: 8px 0;
     margin: 0;
     list-style: none;
 }
@@ -159,10 +159,18 @@ p {
     box-sizing: border-box;
 }
 
+#seccion_superior_derecha_cancion {
+    width: 70%;
+    display: flex;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+}
+
 #seccion_derecha_interior {
     width: 100%;
     background-color: #121212;
     border-radius: 8px;
+    margin-inline-end: 10px;
 }
 
 #seccion_abajo {
@@ -174,18 +182,24 @@ p {
 }
 
 #barra_superior {
-    width: 100%;
-    height: 40px;
-}
-
-#barra_superior {
-    width: 100%;
+    width: 70%;
     height: 64px;
     display: flex;
+    position: absolute;
+    background-color: transparent;
+}
+
+#barra_superior_cancion {
+    width: 70%;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    padding-top: 10px;
 }
 
 #contenido_inicio {
     width: 100%;
+    margin-top: 6%;
     height: calc(100% - 72px);
     overflow: hidden;
     overflow-y: scroll;
@@ -205,11 +219,10 @@ p {
 }
 
 #contenido_inicio_canción {
-    width: 100%;
+    width: 70%;
+    position: absolute;
     height: calc(100% - 72px);
     overflow: hidden;
-    overflow-y: scroll;
-    padding: 0 16px;
     box-sizing: border-box;
 }
 
@@ -1086,9 +1099,30 @@ p {
     fill: #000;
 }
 
+#cancion_detalles_letra_cancion {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
 #cancion_detalles_letra_cancion p {
-    color: white;
-    text-align: left;
-    padding-left: 16px;
+    color: #ffffffb2;
+    text-align: justify;
     font-weight: 400;
+    line-height: 40px;
+}
+
+#cancion_detalles_letra_cancion h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+#icono_pausa_boton_verde
+{
+    display: none;
+}
+
+#CANCION {
+    display: none;
 }

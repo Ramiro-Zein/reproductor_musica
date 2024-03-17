@@ -12,6 +12,12 @@
 
 <body>
 <section id="seccion_principal">
+
+    <audio src="" id="CANCION">
+        <source src="" type="">
+    </audio>
+
+
     <!-- SECCION SUPERIOR DE LA APLICACION -->
     <section id="seccion_arriba">
 
@@ -54,38 +60,19 @@
 
         </section>
 
-        <section id="seccion_superior_derecha">
+        <section id="seccion_superior_derecha_cancion">
             <section id="seccion_derecha_interior">
-                <section id="barra_superior">
-                    <section id="barra_superior_izquierda">
-                        <button id="boton_atras"> <</button>
-                        <button id="boton_adelante"> ></button>
-                    </section>
-                    <section id="barra_superior_enmedio"></section>
-                    <section id="barra_superior_derecha">
-                        <button id="boton_novedades">
-                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
-                                 class="Svg-sc-ytk21e-0 dYnaPI">
-                                <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
-                            </svg>
-                        </button>
-                        <button id="boton_perfil">
-                            <span>Z</span>
-                        </button>
-                    </section>
-                </section>
                 <section id="contenido_inicio_canción">
                     <section id="cancion_detalles_contenedor">
                         <!-- Cabecera de los detalles de la playlist -->
                         <section id="cancion_detalles_cabecera">
                             <section id="cancion_detalles_cabecera_izquierda">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71SrRo5Mg6L._AC_SL1057_.jpg"
+                                <img src="{{ cancion.album.imagen }}"
                                      alt="">
                             </section>
                             <section id="cancion_detalles_cabecera_derecha">
-                                <h1>Demons</h1>
-                                <p>Imagen Dragons</p>
-                                <p><a>Imagine dragons</a> <a>3:00</a> <a>Night vision</a></p>
+                                <h1>{{ cancion.titulo }}</h1>
+                                <p><a>{{ cancion.album.artista.nombre }}</a> • <a>{{cancion.album.nombre}}</a> • <a>{{ cancion.album.fecha_lanzamiento }}</a> • <a>{{ cancion.duracion }}</a></p>
                             </section>
                         </section>
                         <!-- Parte inferior de los detalles de la playlist -->
@@ -93,20 +80,39 @@
                             <!-- Fila donde se encuentra el botón de play verde -->
                             <section id="detalles_cancion_opciones">
                                 <section id="cancion_detalles_opciones_izquierda">
-                                    <button id="boton_play_cancion_detalles_principal">
-                                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
-                                             class="Svg-sc-ytk21e-0 bneLcE">
-                                            <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A. 7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path>
-                                        </svg>
+                                    <button id="boton_play_cancion_detalles_principal" onclick="play_cancion('{{cancion.archivo}}')">
+                                        <svg id="icono_play_boton_verde" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
+                                        <svg id="icono_pausa_boton_verde" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path></svg>
                                     </button>
                                 </section>
 
                             </section>
                             <section id="cancion_detalles_letra_cancion">
-                                <p>When the days are cold and the cards all fold</p> <p>And the saints we see are all made of gold</p> <p>When your dreams all fail and the ones we hail</p> <p>Are the worst of all, and the blood’s run stale</p> <p>I wanna hide the truth</p> <p>I wanna shelter you</p> <p>But with the beast inside</p> <p>There’s nowhere we can hide</p> <p>No matter what we breed, we still are made of greed</p> <p>This is my kingdom come, this is my kingdom come</p> <p>When you feel my heat, look into my eyes</p> <p>It’s where my demons hide, it’s where my demons hide</p> <p>Don’t get too close, it’s dark inside</p> <p>It’s where my demons hide, it’s where my demons hide</p> <p>At the curtain’s call, it’s the last of all</p> <p>When the lights fade out, all the sinners crawl</p> <p>So they dug your grave and the masquerade</p> <p>Will come calling out at the mess you’ve made</p> <p>Don’t wanna let you down, but I am hell-bound</p> <p>Though this is all for you, don’t wanna hide the truth</p> <p>No matter what we breed, we still are made of greed</p> <p>This is my kingdom come, this is my kingdom come</p> <p>Your eyes, they shine so bright, I wanna save that light</p> <p>I can’t escape this now, unless you show me how</p> <p>When you feel my heat, look into my eyes</p> <p>It’s where my demons hide, it’s where my demons hide</p> <p>Don’t get too close, it’s dark inside</p> <p>It’s where my demons hide, it’s where my demons hide</p> <p>They say it’s what you make, I say it’s up to fate</p> <p>It’s woven in my soul, I need to let you go</p> <p>When you feel my heat, look into my eyes</p> <p>It’s where my demons hide, it’s where my demons hide</p> <p>Don’t get too close, it’s dark inside</p> <p>It’s where my demons hide, it’s where my demons hide</p>
+                                <h2>Letra</h2>
+                                {% for linea in cancion.letra %}
+                                    <p>{{ linea }}</p>
+                                {% endfor %}
                             </section>
 
                         </section>
+                        </section>
+                    </section>
+                    <section id="barra_superior_cancion">
+                        <section id="barra_superior_izquierda">
+                            <button id="boton_atras"> <</button>
+                            <button id="boton_adelante"> ></button>
+                        </section>
+                        <section id="barra_superior_enmedio"></section>
+                        <section id="barra_superior_derecha">
+                            <button id="boton_novedades">
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                     class="Svg-sc-ytk21e-0 dYnaPI">
+                                    <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
+                                </svg>
+                            </button>
+                            <button id="boton_perfil">
+                                <span>Z</span>
+                            </button>
                         </section>
                     </section>
             </section>
@@ -184,10 +190,7 @@
 
                 <section>
                     <button id="boton_play">
-                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
-                             class="Svg-sc-ytk21e-0 dYnaPI">
-                            <path d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288V1.713z"></path>
-                        </svg>
+                        <svg ata-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
                     </button>
                 </section>
 
@@ -244,5 +247,29 @@
     </section>
 
 </section>
+<script>
+    function play_cancion(archivo) {
+        var CANCION = document.getElementById("CANCION");
+        var icono_play_boton_verde = document.getElementById('icono_play_boton_verde');
+        var icono_pausa_boton_verde = document.getElementById('icono_pausa_boton_verde');
+
+        var filename = archivo.split('/').pop();
+
+        if (CANCION.src.indexOf(filename) === -1) {
+            CANCION.src = "/static/canciones/" + archivo;
+        }
+
+        if (CANCION.paused) {
+            CANCION.play();
+            icono_play_boton_verde.style.display = "none";
+            icono_pausa_boton_verde.style.display = "initial";
+        } else {
+            CANCION.pause();
+            icono_play_boton_verde.style.display = "initial";
+            icono_pausa_boton_verde.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>

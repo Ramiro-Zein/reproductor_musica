@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="colors 2">
-      <change afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/playlist.html" afterDir="false" />
+    <list default="true" id="81a1c5e2-7160-4845-9721-847b912f29e5" name="Changes" comment="Configuration of directories.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/Spotify.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reproductor/inicio/static/canciones/pretty_afternoon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/static/canciones/Pretty_afternoon.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/static/reproductor/inicio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/inicio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/inicio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/inicio/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/cancion.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/cancion.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/plantillas/inicio/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/reproductor/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/reproductor/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reproductor/reproductor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/reproductor/reproductor/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +150,9 @@
       <workItem from="1710470405701" duration="1444000" />
       <workItem from="1710471930219" duration="3366000" />
       <workItem from="1710475369933" duration="1902000" />
-      <workItem from="1710480133815" duration="1902000" />
+      <workItem from="1710480133815" duration="2170000" />
+      <workItem from="1710526300867" duration="4376000" />
+      <workItem from="1710695136625" duration="12586000" />
     </task>
     <task id="LOCAL-00001" summary="all">
       <option name="closed" value="true" />
@@ -315,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710475195744</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Configuration of directories.">
+      <option name="closed" value="true" />
+      <created>1710482101222</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1710482101222</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +357,7 @@
     <MESSAGE value="Registros 50" />
     <MESSAGE value="colors" />
     <MESSAGE value="colors 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="colors 2" />
+    <MESSAGE value="Configuration of directories." />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration of directories." />
   </component>
 </project>
