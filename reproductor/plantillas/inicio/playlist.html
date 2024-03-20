@@ -79,13 +79,13 @@
                         <!-- Cabecera de los detalles de la playlist -->
                         <section id="playlist_detalles_cabecera">
                             <section id="playlist_detalles_cabecera_izquierda">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71SrRo5Mg6L._AC_SL1057_.jpg"
+                                <img src="{{playlist_datos.imagen}}"
                                      alt="">
                             </section>
                             <section id="playlist_detalles_cabecera_derecha">
-                                <h1>Playlist 1</h1>
-                                <p>Esta es mi primer playlist</p>
-                                <p>Nombre usuario 2 canciones</p>
+                                <h1>{{playlist_datos.nombre}}</h1>
+                                <p>{{playlist_datos.descripcion}}</p>
+                                <p>{{playlist_datos.usuario.nombre}}</p>
                             </section>
                         </section>
                         <!-- Parte inferior de los detalles de la playlist -->
@@ -182,33 +182,25 @@
                     </section>
                     </section>
             </section>
-                <!--
-                <section id="contenido_inicio">
-                    <h5 id="escuchado_recientemente_titulo">Escuchado recientemente</h5>
-
-                    <section id="escuchados_recientemente">
-
-
-                        {% for cancion in canciones %}
-                            <section class="cancion_inicio_item">
-                                <section class="cancion_inicio_item_arriba">
-                                    <img src={{ cancion.album.imagen }} alt="Imagen del album">
-                                    <button class="boton_play_inicio_item">
-                                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
-                                    </button>
-                                </section>
-                                <section class="cancion_inicio_item_abajo">
-                                    <a href="#">{{ cancion.titulo }}</a>
-                                    <p>{{ cancion.album.artista.nombre }}</p>
-                                </section>
-                            </section>
-                        {% endfor %}
-
+            <section id="barra_superior_cancion">
+                        <section id="barra_superior_izquierda">
+                            <button id="boton_atras"> <</button>
+                            <button id="boton_adelante"> ></button>
+                        </section>
+                        <section id="barra_superior_enmedio"></section>
+                        <section id="barra_superior_derecha">
+                            <button id="boton_novedades">
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                     class="Svg-sc-ytk21e-0 dYnaPI">
+                                    <path d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"></path>
+                                </svg>
+                            </button>
+                            <button id="boton_perfil">
+                                <span>Z</span>
+                            </button>
+                        </section>
                     </section>
-                </section>
-                -->
-            </section>
-
+        </section>
 
     </section>
 
